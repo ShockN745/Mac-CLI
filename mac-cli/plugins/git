@@ -15,6 +15,15 @@ case "$fn" in
         git config --list
     ;;
 
+    "git:toni")
+
+        if [ "$echocommand" == "true" ]; then
+            echo "${GREEN}git config --list\n\n${NC}"
+        fi
+        echo "Awesome it works :D:D "
+    ;;
+
+
 
     # Open current Git repository on Github
     "git:open")
