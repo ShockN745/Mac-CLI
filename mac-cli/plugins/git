@@ -15,12 +15,14 @@ case "$fn" in
         git config --list
     ;;
 
-    "git:toni")
+
+
+    "git:diff")
 
         if [ "$echocommand" == "true" ]; then
-            echo "${GREEN}git config --list\n\n${NC}"
+            echo "${GREEN}git diff --color | diff-so-fancy\n\n${NC}"
         fi
-        echo "Awesome it works :D:D "
+        git diff --color | diff-so-fancy
     ;;
 
 

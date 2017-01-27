@@ -173,7 +173,7 @@ COMMANDS=(
     git:settings
     git:add-removed
     git:size
-    git:toni
+    git:diff
     web:download-images
     brew:update
     xcode:cleanup

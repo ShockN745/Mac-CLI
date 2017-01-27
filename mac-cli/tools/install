@@ -103,7 +103,14 @@ main() {
         echo "Installing Git..."
         echo "${GREEN}brew install git\n${NC}"
         brew install git
+        npm install -g diff-so-fancy
 	fi
+
+    if [ ! -f /usr/local/bin/diff-so-fancy ]; then
+        echo "Installing Diff so fancy..."
+        echo "${GREEN}npm install -g diff-so-fancy\n${NC}"
+        npm install -g diff-so-fancy
+  fi
 
     if [ ! -f /usr/local/bin/pv ]; then
         echo "Installing pv (Pipe Viewer)..."
