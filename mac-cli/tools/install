@@ -319,6 +319,10 @@ main() {
 	    esac
 	    printf "${NC}"
     fi
+
+    # Delete cloned repository after install
+    cd ../
+    rm -rf Mac-CLI
 }
 
 main
